@@ -8,10 +8,16 @@ function getTileSprite(type) {
   switch (type) {
     case 0:
       return 'grass'
+    case 3:
+      return 'tree'
+    case 4:
+      return 'chest'
     case 5:
       return 'rock'
     case 6:
       return 'tree'
+    case 7:
+      return 'enemy'
     default:
       return 'grass'
   }
@@ -46,9 +52,8 @@ function Map(props) {
         top: '0px',
         left: '0px',
         width: '800px',
-        height: '400px',
-        // backgroundColor: 'black',
-        border: '3px solid red',
+        height: '480px',
+        border: '3px solid green',
         borderRadius: '10px',
         margin: '10px auto'
       }}
